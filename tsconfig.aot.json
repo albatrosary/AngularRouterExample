@@ -26,7 +26,7 @@
   },
   "compileOnSave": false,
   "files": [
-    "src/scripts/main.ts"
+    "src/scripts/app.ts"
   ],
   "exclude": [
     "node_modules",
