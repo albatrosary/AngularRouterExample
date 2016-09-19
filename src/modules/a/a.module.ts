@@ -4,20 +4,20 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { routing, appRoutingProviders }  from './app.routing';
+import { routing, appRoutingProviders }  from './a.routing';
 
-import { AppComponent, AComponent, BComponent, CComponent, HomeComponent, AboutComponent } from '../components/home/home'
+import { AComponent, AaComponent, AbComponent, AcComponent } from './a.component'
 
 @NgModule({
   imports: [BrowserModule, CommonModule, FormsModule, HttpModule, routing],
-  declarations: [AppComponent, AComponent, BComponent, CComponent, HomeComponent, AboutComponent],
-  bootstrap: [AppComponent],
+  declarations: [AComponent, AaComponent, AbComponent, AcComponent],
+  bootstrap: [],
   providers: [
     appRoutingProviders
   ],
 })
-export class AppModule {
+export class AModule {
   constructor() {
-    console.log('AppModule');
+    console.log('AModule');
   }
 }

@@ -12,7 +12,7 @@ System.config({
   // map tells the System loader where to look for things
   map: {
     // our app is within the app folder
-    'app': 'scripts/main.js',
+    'app': 'scripts/app.js',
     // angular bundles
     '@angular/core': 'npm:@angular/core',
     '@angular/common': 'npm:@angular/common',
@@ -38,7 +38,7 @@ System.config({
     "@angular/forms": { main: 'index', defaultExtension: 'js' }, 
     traceur: { main: 'traceur', defaultExtension: 'js' },
     rxjs: { defaultExtension: 'js' },
-    'modules': { main: 'index', defaultExtension: 'js' },
-    'components': { main: 'index', defaultExtension: 'js' }
+    'scripts': { defaultExtension: 'js' },
+    'modules': { defaultExtension: 'js' }
   }
 });
