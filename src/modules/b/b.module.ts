@@ -8,12 +8,15 @@ import { routing, appRoutingProviders }  from './b.routing';
 
 import { BComponent, BaComponent, BbComponent, BcComponent } from './b.component'
 
+import { AppService } from '../../scripts/app.service'
+
 @NgModule({
   imports: [BrowserModule, CommonModule, FormsModule, HttpModule, routing],
   declarations: [BComponent, BaComponent, BbComponent, BcComponent],
   bootstrap: [BComponent],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    AppService
   ],
 })
 export class BModule {

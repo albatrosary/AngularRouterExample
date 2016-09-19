@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders }  from './app.routing';
 import { AppComponent, DefaultComponent } from './app.component';
 import { PageNotFoundComponent } from './pagenotfound.component';
+import { AppService } from './app.service';
 
 import { AModule } from '../modules/a/a.module';
 import { BModule } from '../modules/b/b.module';
@@ -17,7 +18,8 @@ import { CModule } from '../modules/c/c.module';
   declarations: [AppComponent, DefaultComponent, PageNotFoundComponent],
   bootstrap: [AppComponent],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    AppService
   ],
 })
 export class AppModule {
