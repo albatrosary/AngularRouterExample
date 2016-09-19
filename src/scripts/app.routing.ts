@@ -6,7 +6,7 @@ import { PageNotFoundComponent } from './pagenotfound.component';
 
 /* Invalid configuration of route 'a': redirectTo and children cannot be used together */
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/app', pathMatch: 'full'},
+  { path: '', redirectTo: '/c/c', pathMatch: 'full'},
   { path: 'app', component: DefaultComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
