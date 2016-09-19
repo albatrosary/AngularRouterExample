@@ -13,10 +13,8 @@ import { AppService } from '../../scripts/app.service'
 @NgModule({
   imports: [BrowserModule, CommonModule, FormsModule, HttpModule, routing],
   declarations: [BComponent, BaComponent, BbComponent, BcComponent],
-  bootstrap: [BComponent],
   providers: [
-    appRoutingProviders,
-    AppService
+    appRoutingProviders
   ],
 })
 export class BModule {

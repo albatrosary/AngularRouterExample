@@ -30,15 +30,15 @@ import * as import22 from '@angular/http/src/backends/browser_xhr';
 import * as import23 from '@angular/http/src/base_response_options';
 import * as import24 from '@angular/http/src/backends/xhr_backend';
 import * as import25 from '@angular/http/src/base_request_options';
-import * as import26 from '../../scripts/app.service';
-import * as import27 from '@angular/core/src/di/injector';
-import * as import28 from './b.component.ngfactory';
-import * as import29 from '@angular/core/src/application_tokens';
-import * as import30 from '@angular/platform-browser/src/dom/events/dom_events';
-import * as import31 from '@angular/platform-browser/src/dom/events/key_events';
-import * as import32 from '@angular/core/src/zone/ng_zone';
-import * as import33 from '@angular/platform-browser/src/dom/debug/ng_probe';
-import * as import34 from './b.component';
+import * as import26 from '@angular/core/src/di/injector';
+import * as import27 from './b.component.ngfactory';
+import * as import28 from '@angular/core/src/application_tokens';
+import * as import29 from '@angular/platform-browser/src/dom/events/dom_events';
+import * as import30 from '@angular/platform-browser/src/dom/events/key_events';
+import * as import31 from '@angular/core/src/zone/ng_zone';
+import * as import32 from '@angular/platform-browser/src/dom/debug/ng_probe';
+import * as import33 from './b.component';
+import * as import34 from '../../scripts/app.service';
 import * as import35 from '@angular/core/src/console';
 import * as import36 from '@angular/core/src/i18n/tokens';
 import * as import37 from '@angular/core/src/error_handler';
@@ -93,17 +93,15 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
   __RequestOptions_37:import25.BaseRequestOptions;
   __Http_38:any;
   __ROUTES_39:any[];
-  __AppService_40:import26.AppService;
-  __TRANSLATIONS_FORMAT_41:any;
-  constructor(parent:import27.Injector) {
+  __TRANSLATIONS_FORMAT_40:any;
+  constructor(parent:import26.Injector) {
     super(parent,[
-      import28.BComponentNgFactory,
-      import28.BaComponentNgFactory,
-      import28.BbComponentNgFactory,
-      import28.BcComponentNgFactory,
-      import28.BComponentNgFactory
+      import27.BComponentNgFactory,
+      import27.BaComponentNgFactory,
+      import27.BbComponentNgFactory,
+      import27.BcComponentNgFactory
     ]
-    ,[import28.BComponentNgFactory]);
+    ,[]);
   }
   get _LOCALE_ID_8():any {
     if ((this.__LOCALE_ID_8 == (null as any))) { (this.__LOCALE_ID_8 = (null as any)); }
@@ -122,7 +120,7 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
     return this.__Compiler_15;
   }
   get _APP_ID_16():any {
-    if ((this.__APP_ID_16 == (null as any))) { (this.__APP_ID_16 = import29._appIdRandomProviderFactory()); }
+    if ((this.__APP_ID_16 == (null as any))) { (this.__APP_ID_16 = import28._appIdRandomProviderFactory()); }
     return this.__APP_ID_16;
   }
   get _DOCUMENT_17():any {
@@ -135,15 +133,15 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
   }
   get _EVENT_MANAGER_PLUGINS_19():any[] {
     if ((this.__EVENT_MANAGER_PLUGINS_19 == (null as any))) { (this.__EVENT_MANAGER_PLUGINS_19 = [
-      new import30.DomEventsPlugin(),
-      new import31.KeyEventsPlugin(),
+      new import29.DomEventsPlugin(),
+      new import30.KeyEventsPlugin(),
       new import14.HammerGesturesPlugin(this._HAMMER_GESTURE_CONFIG_18)
     ]
     ); }
     return this.__EVENT_MANAGER_PLUGINS_19;
   }
   get _EventManager_20():import15.EventManager {
-    if ((this.__EventManager_20 == (null as any))) { (this.__EventManager_20 = new import15.EventManager(this._EVENT_MANAGER_PLUGINS_19,this.parent.get(import32.NgZone))); }
+    if ((this.__EventManager_20 == (null as any))) { (this.__EventManager_20 = new import15.EventManager(this._EVENT_MANAGER_PLUGINS_19,this.parent.get(import31.NgZone))); }
     return this.__EventManager_20;
   }
   get _DomSharedStylesHost_21():import16.DomSharedStylesHost {
@@ -159,7 +157,7 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
     return this.__DomRootRenderer_23;
   }
   get _RootRenderer_24():any {
-    if ((this.__RootRenderer_24 == (null as any))) { (this.__RootRenderer_24 = import33._createConditionalRootRenderer(this._DomRootRenderer_23,this.parent.get(import33.NgProbeToken,(null as any)))); }
+    if ((this.__RootRenderer_24 == (null as any))) { (this.__RootRenderer_24 = import32._createConditionalRootRenderer(this._DomRootRenderer_23,this.parent.get(import32.NgProbeToken,(null as any)))); }
     return this.__RootRenderer_24;
   }
   get _DomSanitizer_25():import18.DomSanitizerImpl {
@@ -221,11 +219,11 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
   get _ROUTES_39():any[] {
         if ((this.__ROUTES_39 == (null as any))) { (this.__ROUTES_39 = [[{
           path: 'b',
-          component: import34.BComponent,
-          canActivate: [import26.AppService],
-          canActivateChild: [import26.AppService],
-          canLoad: [import26.AppService],
-          canDeactivate: [import26.AppService],
+          component: import33.BComponent,
+          canActivate: [import34.AppService],
+          canActivateChild: [import34.AppService],
+          canLoad: [import34.AppService],
+          canDeactivate: [import34.AppService],
           children: [
             {
               path: '',
@@ -235,17 +233,17 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
             ,
             {
               path: 'a',
-              component: import34.BaComponent
+              component: import33.BaComponent
             }
             ,
             {
               path: 'b',
-              component: import34.BbComponent
+              component: import33.BbComponent
             }
             ,
             {
               path: 'c',
-              component: import34.BcComponent
+              component: import33.BcComponent
             }
 
           ]
@@ -254,13 +252,9 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
     ]]); }
     return this.__ROUTES_39;
   }
-  get _AppService_40():import26.AppService {
-    if ((this.__AppService_40 == (null as any))) { (this.__AppService_40 = new import26.AppService()); }
-    return this.__AppService_40;
-  }
-  get _TRANSLATIONS_FORMAT_41():any {
-    if ((this.__TRANSLATIONS_FORMAT_41 == (null as any))) { (this.__TRANSLATIONS_FORMAT_41 = (null as any)); }
-    return this.__TRANSLATIONS_FORMAT_41;
+  get _TRANSLATIONS_FORMAT_40():any {
+    if ((this.__TRANSLATIONS_FORMAT_40 == (null as any))) { (this.__TRANSLATIONS_FORMAT_40 = (null as any)); }
+    return this.__TRANSLATIONS_FORMAT_40;
   }
   createInternal():import1.BModule {
     this._CommonModule_0 = new import2.CommonModule();
@@ -273,8 +267,8 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
     this._BModule_7 = new import1.BModule();
     this._ErrorHandler_10 = import4.errorHandler();
     this._ApplicationInitStatus_11 = new import10.ApplicationInitStatus(this.parent.get(import10.APP_INITIALIZER,(null as any)));
-    this._Testability_12 = new import11.Testability(this.parent.get(import32.NgZone));
-    this._ApplicationRef__13 = new import12.ApplicationRef_(this.parent.get(import32.NgZone),this.parent.get(import35.Console),this,this._ErrorHandler_10,this,this._ApplicationInitStatus_11,this.parent.get(import11.TestabilityRegistry,(null as any)),this._Testability_12);
+    this._Testability_12 = new import11.Testability(this.parent.get(import31.NgZone));
+    this._ApplicationRef__13 = new import12.ApplicationRef_(this.parent.get(import31.NgZone),this.parent.get(import35.Console),this,this._ErrorHandler_10,this,this._ApplicationInitStatus_11,this.parent.get(import11.TestabilityRegistry,(null as any)),this._Testability_12);
     return this._BModule_7;
   }
   getInternal(token:any,notFoundResult:any):any {
@@ -294,7 +288,7 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
     if ((token === import12.ApplicationRef_)) { return this._ApplicationRef__13; }
     if ((token === import12.ApplicationRef)) { return this._ApplicationRef_14; }
     if ((token === import13.Compiler)) { return this._Compiler_15; }
-    if ((token === import29.APP_ID)) { return this._APP_ID_16; }
+    if ((token === import28.APP_ID)) { return this._APP_ID_16; }
     if ((token === import38.DOCUMENT)) { return this._DOCUMENT_17; }
     if ((token === import14.HAMMER_GESTURE_CONFIG)) { return this._HAMMER_GESTURE_CONFIG_18; }
     if ((token === import15.EVENT_MANAGER_PLUGINS)) { return this._EVENT_MANAGER_PLUGINS_19; }
@@ -318,8 +312,7 @@ class BModuleInjector extends import0.NgModuleInjector<import1.BModule> {
     if ((token === import25.RequestOptions)) { return this._RequestOptions_37; }
     if ((token === import45.Http)) { return this._Http_38; }
     if ((token === import46.ROUTES)) { return this._ROUTES_39; }
-    if ((token === import26.AppService)) { return this._AppService_40; }
-    if ((token === import47.TRANSLATIONS_FORMAT)) { return this._TRANSLATIONS_FORMAT_41; }
+    if ((token === import47.TRANSLATIONS_FORMAT)) { return this._TRANSLATIONS_FORMAT_40; }
     return notFoundResult;
   }
   destroyInternal():void {

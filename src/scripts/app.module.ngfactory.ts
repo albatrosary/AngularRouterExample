@@ -33,11 +33,11 @@ import * as import25 from '@angular/http/src/backends/browser_xhr';
 import * as import26 from '@angular/http/src/base_response_options';
 import * as import27 from '@angular/http/src/backends/xhr_backend';
 import * as import28 from '@angular/http/src/base_request_options';
-import * as import29 from './app.service';
-import * as import30 from '@angular/common/src/location/location';
-import * as import31 from '@angular/router/src/url_tree';
-import * as import32 from '@angular/router/src/router_outlet_map';
-import * as import33 from '@angular/core/src/linker/system_js_ng_module_factory_loader';
+import * as import29 from '@angular/common/src/location/location';
+import * as import30 from '@angular/router/src/url_tree';
+import * as import31 from '@angular/router/src/router_outlet_map';
+import * as import32 from '@angular/core/src/linker/system_js_ng_module_factory_loader';
+import * as import33 from './app.service';
 import * as import34 from '@angular/core/src/di/injector';
 import * as import35 from '../modules/a/a.component.ngfactory';
 import * as import36 from '../modules/b/b.component.ngfactory';
@@ -119,16 +119,16 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   __RequestOptions_41:import28.BaseRequestOptions;
   __Http_42:any;
   __ROUTES_43:any[];
-  __AppService_44:import29.AppService;
-  __ROUTER_CONFIGURATION_45:any;
-  __LocationStrategy_46:any;
-  __Location_47:import30.Location;
-  __UrlSerializer_48:import31.DefaultUrlSerializer;
-  __RouterOutletMap_49:import32.RouterOutletMap;
-  __NgModuleFactoryLoader_50:import33.SystemJsNgModuleLoader;
-  __Router_51:any;
-  __ActivatedRoute_52:any;
-  __APP_BOOTSTRAP_LISTENER_53:any[];
+  __ROUTER_CONFIGURATION_44:any;
+  __LocationStrategy_45:any;
+  __Location_46:import29.Location;
+  __UrlSerializer_47:import30.DefaultUrlSerializer;
+  __RouterOutletMap_48:import31.RouterOutletMap;
+  __NgModuleFactoryLoader_49:import32.SystemJsNgModuleLoader;
+  __Router_50:any;
+  __ActivatedRoute_51:any;
+  __APP_BOOTSTRAP_LISTENER_52:any[];
+  __AppService_53:import33.AppService;
   __TRANSLATIONS_FORMAT_54:any;
   constructor(parent:import34.Injector) {
     super(parent,[
@@ -140,7 +140,6 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
       import36.BaComponentNgFactory,
       import36.BbComponentNgFactory,
       import36.BcComponentNgFactory,
-      import36.BComponentNgFactory,
       import37.CComponentNgFactory,
       import37.CaComponentNgFactory,
       import37.CbComponentNgFactory,
@@ -294,10 +293,10 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         [{
           path: 'b',
           component: import47.BComponent,
-          canActivate: [import29.AppService],
-          canActivateChild: [import29.AppService],
-          canLoad: [import29.AppService],
-          canDeactivate: [import29.AppService],
+          canActivate: [import33.AppService],
+          canActivateChild: [import33.AppService],
+          canLoad: [import33.AppService],
+          canDeactivate: [import33.AppService],
           children: [
             {
               path: '',
@@ -385,10 +384,10 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         {
           path: 'app',
           component: import50.DefaultComponent,
-          canActivate: [import29.AppService],
-          canActivateChild: [import29.AppService],
-          canLoad: [import29.AppService],
-          canDeactivate: [import29.AppService]
+          canActivate: [import33.AppService],
+          canActivateChild: [import33.AppService],
+          canLoad: [import33.AppService],
+          canDeactivate: [import33.AppService]
         }
         ,
         {
@@ -402,45 +401,45 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     ); }
     return this.__ROUTES_43;
   }
-  get _AppService_44():import29.AppService {
-    if ((this.__AppService_44 == (null as any))) { (this.__AppService_44 = new import29.AppService()); }
-    return this.__AppService_44;
+  get _ROUTER_CONFIGURATION_44():any {
+    if ((this.__ROUTER_CONFIGURATION_44 == (null as any))) { (this.__ROUTER_CONFIGURATION_44 = {}); }
+    return this.__ROUTER_CONFIGURATION_44;
   }
-  get _ROUTER_CONFIGURATION_45():any {
-    if ((this.__ROUTER_CONFIGURATION_45 == (null as any))) { (this.__ROUTER_CONFIGURATION_45 = {}); }
-    return this.__ROUTER_CONFIGURATION_45;
+  get _LocationStrategy_45():any {
+    if ((this.__LocationStrategy_45 == (null as any))) { (this.__LocationStrategy_45 = import8.provideLocationStrategy(this.parent.get(import52.PlatformLocation),this.parent.get(import53.APP_BASE_HREF,(null as any)),this._ROUTER_CONFIGURATION_44)); }
+    return this.__LocationStrategy_45;
   }
-  get _LocationStrategy_46():any {
-    if ((this.__LocationStrategy_46 == (null as any))) { (this.__LocationStrategy_46 = import8.provideLocationStrategy(this.parent.get(import52.PlatformLocation),this.parent.get(import53.APP_BASE_HREF,(null as any)),this._ROUTER_CONFIGURATION_45)); }
-    return this.__LocationStrategy_46;
+  get _Location_46():import29.Location {
+    if ((this.__Location_46 == (null as any))) { (this.__Location_46 = new import29.Location(this._LocationStrategy_45)); }
+    return this.__Location_46;
   }
-  get _Location_47():import30.Location {
-    if ((this.__Location_47 == (null as any))) { (this.__Location_47 = new import30.Location(this._LocationStrategy_46)); }
-    return this.__Location_47;
+  get _UrlSerializer_47():import30.DefaultUrlSerializer {
+    if ((this.__UrlSerializer_47 == (null as any))) { (this.__UrlSerializer_47 = new import30.DefaultUrlSerializer()); }
+    return this.__UrlSerializer_47;
   }
-  get _UrlSerializer_48():import31.DefaultUrlSerializer {
-    if ((this.__UrlSerializer_48 == (null as any))) { (this.__UrlSerializer_48 = new import31.DefaultUrlSerializer()); }
-    return this.__UrlSerializer_48;
+  get _RouterOutletMap_48():import31.RouterOutletMap {
+    if ((this.__RouterOutletMap_48 == (null as any))) { (this.__RouterOutletMap_48 = new import31.RouterOutletMap()); }
+    return this.__RouterOutletMap_48;
   }
-  get _RouterOutletMap_49():import32.RouterOutletMap {
-    if ((this.__RouterOutletMap_49 == (null as any))) { (this.__RouterOutletMap_49 = new import32.RouterOutletMap()); }
-    return this.__RouterOutletMap_49;
+  get _NgModuleFactoryLoader_49():import32.SystemJsNgModuleLoader {
+    if ((this.__NgModuleFactoryLoader_49 == (null as any))) { (this.__NgModuleFactoryLoader_49 = new import32.SystemJsNgModuleLoader(this._Compiler_19,this.parent.get(import32.SystemJsNgModuleLoaderConfig,(null as any)))); }
+    return this.__NgModuleFactoryLoader_49;
   }
-  get _NgModuleFactoryLoader_50():import33.SystemJsNgModuleLoader {
-    if ((this.__NgModuleFactoryLoader_50 == (null as any))) { (this.__NgModuleFactoryLoader_50 = new import33.SystemJsNgModuleLoader(this._Compiler_19,this.parent.get(import33.SystemJsNgModuleLoaderConfig,(null as any)))); }
-    return this.__NgModuleFactoryLoader_50;
+  get _Router_50():any {
+    if ((this.__Router_50 == (null as any))) { (this.__Router_50 = import8.setupRouter(this._ApplicationRef_18,this._UrlSerializer_47,this._RouterOutletMap_48,this._Location_46,this,this._NgModuleFactoryLoader_49,this._Compiler_19,this._ROUTES_43,this._ROUTER_CONFIGURATION_44)); }
+    return this.__Router_50;
   }
-  get _Router_51():any {
-    if ((this.__Router_51 == (null as any))) { (this.__Router_51 = import8.setupRouter(this._ApplicationRef_18,this._UrlSerializer_48,this._RouterOutletMap_49,this._Location_47,this,this._NgModuleFactoryLoader_50,this._Compiler_19,this._ROUTES_43,this._ROUTER_CONFIGURATION_45)); }
-    return this.__Router_51;
+  get _ActivatedRoute_51():any {
+    if ((this.__ActivatedRoute_51 == (null as any))) { (this.__ActivatedRoute_51 = import8.rootRoute(this._Router_50)); }
+    return this.__ActivatedRoute_51;
   }
-  get _ActivatedRoute_52():any {
-    if ((this.__ActivatedRoute_52 == (null as any))) { (this.__ActivatedRoute_52 = import8.rootRoute(this._Router_51)); }
-    return this.__ActivatedRoute_52;
+  get _APP_BOOTSTRAP_LISTENER_52():any[] {
+    if ((this.__APP_BOOTSTRAP_LISTENER_52 == (null as any))) { (this.__APP_BOOTSTRAP_LISTENER_52 = [import8.initialRouterNavigation(this._Router_50,this._ROUTER_CONFIGURATION_44)]); }
+    return this.__APP_BOOTSTRAP_LISTENER_52;
   }
-  get _APP_BOOTSTRAP_LISTENER_53():any[] {
-    if ((this.__APP_BOOTSTRAP_LISTENER_53 == (null as any))) { (this.__APP_BOOTSTRAP_LISTENER_53 = [import8.initialRouterNavigation(this._Router_51,this._ROUTER_CONFIGURATION_45)]); }
-    return this.__APP_BOOTSTRAP_LISTENER_53;
+  get _AppService_53():import33.AppService {
+    if ((this.__AppService_53 == (null as any))) { (this.__AppService_53 = new import33.AppService()); }
+    return this.__AppService_53;
   }
   get _TRANSLATIONS_FORMAT_54():any {
     if ((this.__TRANSLATIONS_FORMAT_54 == (null as any))) { (this.__TRANSLATIONS_FORMAT_54 = (null as any)); }
@@ -510,16 +509,16 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import28.RequestOptions)) { return this._RequestOptions_41; }
     if ((token === import65.Http)) { return this._Http_42; }
     if ((token === import66.ROUTES)) { return this._ROUTES_43; }
-    if ((token === import29.AppService)) { return this._AppService_44; }
-    if ((token === import8.ROUTER_CONFIGURATION)) { return this._ROUTER_CONFIGURATION_45; }
-    if ((token === import53.LocationStrategy)) { return this._LocationStrategy_46; }
-    if ((token === import30.Location)) { return this._Location_47; }
-    if ((token === import31.UrlSerializer)) { return this._UrlSerializer_48; }
-    if ((token === import32.RouterOutletMap)) { return this._RouterOutletMap_49; }
-    if ((token === import67.NgModuleFactoryLoader)) { return this._NgModuleFactoryLoader_50; }
-    if ((token === import54.Router)) { return this._Router_51; }
-    if ((token === import68.ActivatedRoute)) { return this._ActivatedRoute_52; }
-    if ((token === import41.APP_BOOTSTRAP_LISTENER)) { return this._APP_BOOTSTRAP_LISTENER_53; }
+    if ((token === import8.ROUTER_CONFIGURATION)) { return this._ROUTER_CONFIGURATION_44; }
+    if ((token === import53.LocationStrategy)) { return this._LocationStrategy_45; }
+    if ((token === import29.Location)) { return this._Location_46; }
+    if ((token === import30.UrlSerializer)) { return this._UrlSerializer_47; }
+    if ((token === import31.RouterOutletMap)) { return this._RouterOutletMap_48; }
+    if ((token === import67.NgModuleFactoryLoader)) { return this._NgModuleFactoryLoader_49; }
+    if ((token === import54.Router)) { return this._Router_50; }
+    if ((token === import68.ActivatedRoute)) { return this._ActivatedRoute_51; }
+    if ((token === import41.APP_BOOTSTRAP_LISTENER)) { return this._APP_BOOTSTRAP_LISTENER_52; }
+    if ((token === import33.AppService)) { return this._AppService_53; }
     if ((token === import69.TRANSLATIONS_FORMAT)) { return this._TRANSLATIONS_FORMAT_54; }
     return notFoundResult;
   }
