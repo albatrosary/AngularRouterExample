@@ -8,7 +8,7 @@ import { AppService } from './app.service'
 
 /* Invalid configuration of route 'a': redirectTo and children cannot be used together */
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/c/c', pathMatch: 'full'},
+  { path: '', redirectTo: '/c/b', pathMatch: 'full'},
   {
     path: 'app',
     component: DefaultComponent,

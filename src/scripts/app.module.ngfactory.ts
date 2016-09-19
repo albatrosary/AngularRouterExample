@@ -378,7 +378,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
       [
         {
           path: '',
-          redirectTo: '/c/c',
+          redirectTo: '/c/b',
           pathMatch: 'full'
         }
         ,
