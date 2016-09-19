@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'my-a',
   template: `
     <h1>My A</h1>
+    <ul>
+      <li><a routerLink="a" routerLinkActive="active">Aa Component</a></li>
+      <li><a routerLink="b" routerLinkActive="active">Ab Component</a></li>
+      <li><a routerLink="c" routerLinkActive="active">Ac Component</a></li>
+    </ul>
     <router-outlet></router-outlet>
     `,
 })

@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
   selector: 'my-b',
   template: `
     <h1>My B</h1>
+    <ul>
+      <li><a routerLink="a" routerLinkActive="active">Ba Component</a></li>
+      <li><a routerLink="b" routerLinkActive="active">Bb Component</a></li>
+      <li><a routerLink="c" routerLinkActive="active">Bc Component</a></li>
+    </ul>
     <router-outlet></router-outlet>
     `,
 })

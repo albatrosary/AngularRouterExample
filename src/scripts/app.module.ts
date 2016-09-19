@@ -6,13 +6,14 @@ import { HttpModule } from '@angular/http';
 
 import { routing, appRoutingProviders }  from './app.routing';
 import { AppComponent, DefaultComponent } from './app.component';
+import { PageNotFoundComponent } from './pagenotfound.component';
 
 import { AModule } from '../modules/a/a.module';
 import { BModule } from '../modules/b/b.module';
 
 @NgModule({
   imports: [BrowserModule, CommonModule, FormsModule, HttpModule, AModule, BModule, routing],
-  declarations: [AppComponent, DefaultComponent],
+  declarations: [AppComponent, DefaultComponent, PageNotFoundComponent],
   bootstrap: [AppComponent],
   providers: [
     appRoutingProviders
