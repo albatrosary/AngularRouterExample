@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { routing, appRoutingProviders }  from './b.routing';
+import { routing, bRoutingProviders }  from './b.routing';
 
 import { BComponent, BaComponent, BbComponent, BcComponent } from './b.component'
 
@@ -14,7 +14,7 @@ import { AppService } from '../../scripts/app.service'
   imports: [BrowserModule, CommonModule, FormsModule, HttpModule, routing],
   declarations: [BComponent, BaComponent, BbComponent, BcComponent],
   providers: [
-    appRoutingProviders
+    bRoutingProviders
   ],
 })
 export class BModule {

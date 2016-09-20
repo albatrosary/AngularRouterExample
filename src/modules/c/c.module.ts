@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { routing, appRoutingProviders }  from './c.routing';
+import { routing, cRoutingProviders }  from './c.routing';
 
 import { CComponent, CaComponent, CbComponent } from './c.component'
 import { DComponent, DaComponent, DbComponent } from './d.component'
@@ -13,7 +13,7 @@ import { DComponent, DaComponent, DbComponent } from './d.component'
   imports: [BrowserModule, CommonModule, FormsModule, HttpModule, routing],
   declarations: [CComponent, CaComponent, CbComponent, DComponent, DaComponent, DbComponent],
   providers: [
-    appRoutingProviders
+    cRoutingProviders
   ],
 })
 export class CModule {

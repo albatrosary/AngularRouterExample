@@ -20,7 +20,7 @@ import { CModule } from '../modules/c/c.module';
   providers: [
     appRoutingProviders,
     AppService
-  ],
+  ]
 })
 export class AppModule {
   constructor() {
